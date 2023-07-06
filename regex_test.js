@@ -32,3 +32,14 @@ let result = petRegex.test(petString);
 
 console.log(result);
 // bizning test methodimiz string ichidan chu kiritilgan uchchala qiymatdan birini qidiradi agar bo'lsa true, aks holda false qaytaradi
+
+
+/* Case difference - katta va kichik harflar ==== i === kalit so'zi, i - incentive */
+// Biz case sensitiv holatini ko'rdik, ya'ni Ale va ale teng emas edi, shu holatni oldini olish uchun maxsus yorliq harf ishlatiladi, i harfi
+
+let myString = "Meningyurtim";
+let fccRegex = /meningYurtim/i;
+let res = fccRegex.test(myString);
+console.log(res);
+
+// bunda biz true qiymat olamiz, chunki i belgisi katta harf va kichik harflarni bir turga o'tqazib beradi
